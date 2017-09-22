@@ -1,0 +1,28 @@
+<!-- tpl:page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{str:homepage_title}</title>
+</head>
+<body>
+
+<h1>{str:header}</h1>
+
+<form method="post">
+    <input type="hidden" name="num" value="{num}">
+    <button type="submit" name="button" value="minus">{str:button_minus}</button>
+    <button type="submit" name="button" value="plus">{str:button_plus}</button>
+    <button type="submit" name="button" value="reset">{str:button_reset}</button>
+</form>
+
+<br><br>
+<!-- tpl:line -->
+{str:line} {i}.<br>
+<!-- /tpl:line -->
+<br>
+<b>{message}</b>
+
+</body>
+</html>
+<!-- /tpl:page -->
