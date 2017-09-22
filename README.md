@@ -4,11 +4,10 @@
 
 **Update 2017.07.22**
 
-Nekomimi is a simple PHP information manager for HTML
-documents. This resource was initially developed for my
-own needs and projects, until I decided that it might
-be interesting to release for others to use if it is of
-any use to anyone. Its features includes:
+Nekomimi is a simple PHP information manager for HTML documents. This
+resource was initially developed for my own needs and projects, until
+I decided that it might be interesting to release for others to use if
+it is of any use to anyone. Its features includes:
 
 * internationalization;
 * variables;
@@ -22,8 +21,8 @@ A test.php/test.html is a example using resources of Nekomimi.
 
 ## Observation
 
-No momento estou um pouco sem tempo. Quando eu tiver  tempo
-faço um tutorial melhor sobre a utilização deste recurso.
+Right now I'm a little out of time. When I have time I will do a better
+tutorial on using this feature.
 
 # Copyright and license
 
