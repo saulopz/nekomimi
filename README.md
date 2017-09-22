@@ -1,4 +1,4 @@
-#Nekomimi
+# Nekomimi
 
 **Created by Saulo Popov Zambiasi**.
 
@@ -16,16 +16,16 @@ any use to anyone. Its features includes:
 * debug file manager;
 * request (get/post) information manager.
 
-##Example
+## Example
 
 A test.php/test.html is a example using resources of Nekomimi.
 
-##Observation
+## Observation
 
 No momento estou um pouco sem tempo. Quando eu tiver  tempo
 faço um tutorial melhor sobre a utilização deste recurso.
 
-#Copyright and license
+# Copyright and license
 
 Copyright 2017 Saulo Popov Zambiasi
 
