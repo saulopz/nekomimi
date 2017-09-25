@@ -4,11 +4,11 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Configure nekomimi framework
-define("NEKOPATH", "./");
-define("STRINGPATH", NEKOPATH . "strings/");
-define("LANGUAGE", "enUS");
+$_NEKOPATH = "./";
+$_STRINGPATH = $_NEKOPATH . "strings/";
+$_LANGUAGE = "enUS";
 
-include_once NEKOPATH . 'Nekomimi.php';
+include_once $_NEKOPATH . 'Nekomimi.php';
 
 $request = new Request();
 $num = 0;

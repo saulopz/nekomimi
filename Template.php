@@ -20,7 +20,7 @@
  * limitations under the License.
  */
 
-include_once STRINGPATH . "strings_" . LANGUAGE . ".php";
+include_once $_STRINGPATH . "strings_" . $_LANGUAGE . ".php";
 
 /**
  * Class Template

@@ -20,17 +20,19 @@ any use to anyone. Its features includes:
 
 A test.php/test.html is a example using resources of Nekomimi.
 
-It's important configure 3 defines in your main program:
+It's important configure 3 global variables in your main program:
 
-define("NEKOPATH", "nekomimi/");
-define("STRINGPATH", NEKOPATH . "strings/");
-define("LANGUAGE", "enUS");
+```
+$_NEKOPATH = "nekomimi/";
+$_STRINGPATH = $_NEKOPATH . $_NEKOPATH . "strings/";
+$_LANGUAGE = "enUS";
+```
 
-- ***NEKOPATH***: path to nemomimi root folder;
-- ***STRINGPATH***: path to your internationalization strings. It
+- ***$_NEKOPATH***: path to nemomimi root folder;
+- ***$_STRINGPATH***: path to your internationalization strings. It
 can be stored inside NEKOPATH folder, but you can choose your own
 place;
-- ***LANGUAGE***: your language. You can create your own language
+- ***$_LANGUAGE***: your language. You can create your own language
 file on STRINGPATH with format strings_yourlang.php, and set
 LANGUAGE as "yourlang". You can also use a language stored on a
 database. 
