@@ -1,8 +1,8 @@
-#Nekomimi
+# Nekomimi
 
-**Created by Saulo Popov Zambiasi**.
-
-**Update 2017.07.22**
+- **Created by Saulo Popov Zambiasi**.
+- **Created in 2005**
+- **Last update 2017.07.25**
 
 Nekomimi is a simple PHP information manager for HTML
 documents. This resource was initially developed for my
@@ -16,16 +16,31 @@ any use to anyone. Its features includes:
 * debug file manager;
 * request (get/post) information manager.
 
-##Example
+## Example
 
 A test.php/test.html is a example using resources of Nekomimi.
 
-##Observation
+It's important configure 3 defines in your main program:
 
-No momento estou um pouco sem tempo. Quando eu tiver  tempo
-faço um tutorial melhor sobre a utilização deste recurso.
+define("NEKOPATH", "nekomimi/");
+define("STRINGPATH", NEKOPATH . "strings/");
+define("LANGUAGE", "enUS");
 
-#Copyright and license
+- ***NEKOPATH***: path to nemomimi root folder;
+- ***STRINGPATH***: path to your internationalization strings. It
+can be stored inside NEKOPATH folder, but you can choose your own
+place;
+- ***LANGUAGE***: your language. You can create your own language
+file on STRINGPATH with format strings_yourlang.php, and set
+LANGUAGE as "yourlang". You can also use a language stored on a
+database. 
+
+## Observation
+
+Right now I'm a little out of time. When I have time I will do a
+better tutorial on using this feature.
+
+# Copyright and license
 
 Copyright 2017 Saulo Popov Zambiasi
 

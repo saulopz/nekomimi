@@ -3,7 +3,7 @@
 /* ======================================================================
  * Nekomimi v2.0
  * https://github.com/saulopz/nekomimi
- * Last update: 2017.09.22
+ * Last update: 2017.09.25
  * ======================================================================
  * Copyright 2017 Saulo Popov Zambiasi
  *
@@ -19,8 +19,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-include_once 'Config.php';
 
 class Debug
 {

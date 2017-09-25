@@ -3,8 +3,12 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-include_once 'Nekomimi.php';
-include_once 'Request.php';
+// Configure nekomimi framework
+define("NEKOPATH", "./");
+define("STRINGPATH", NEKOPATH . "strings/");
+define("LANGUAGE", "enUS");
+
+include_once NEKOPATH . 'Nekomimi.php';
 
 $request = new Request();
 $num = 0;
@@ -26,17 +30,17 @@ if ($request->exists("button")) {
 }
 
 $file = file_get_contents("test.html");
-$tpl = new Nekomimi($file, "page");
+$tpl = new Template($file, "page");
 
 $line = "";
 for ($i = 0; $i < $num; $i++) {
-    $tplLine = new Nekomimi($file, "line");
+    $tplLine = new Template($file, "line");
     $tplLine->setVar("i", $i);
     $line .= $tplLine;
 }
 $tpl->set("line", $line);
 
-$message = Nekomimi::getString("message", array("n" => $num));
+$message = Template::getString("message", array("n" => $num));
 $tpl->setVar("message", $message);
 $tpl->setVar("num", $num);
 echo $tpl;

@@ -1,9 +1,9 @@
 <?php
 
-$strings["homepage_title"] = "Nekomimi: Test page.";
-$strings["header"] = "Header";
-$strings["button_plus"] = "Plus";
-$strings["button_minus"] = "Minus";
-$strings["button_reset"] = "Reset";
-$strings["line"] = "Interaction";
-$strings["message"] = "This page has {n} interactions.";
+$_STRING["homepage_title"] = "Nekomimi: Test page.";
+$_STRING["header"] = "Header";
+$_STRING["button_plus"] = "Plus";
+$_STRING["button_minus"] = "Minus";
+$_STRING["button_reset"] = "Reset";
+$_STRING["line"] = "Interaction";
+$_STRING["message"] = "This page has {n} interactions.";
