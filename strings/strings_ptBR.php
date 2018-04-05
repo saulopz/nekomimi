@@ -7,3 +7,4 @@ $_STRING["button_minus"] = "Decrementar";
 $_STRING["button_reset"] = "Resetar";
 $_STRING["line"] = "Intera&ccedil;&atilde;o";
 $_STRING["message"] = "Esta p&aacute;gina tem {n} intera&ccedil;&otilde;es.";
+$_STRING["language"] = "Linguagem";

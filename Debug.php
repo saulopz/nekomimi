@@ -1,11 +1,11 @@
 <?php
 
 /* ======================================================================
- * Nekomimi v2.0
+ * Nekomimi v2.1
  * https://github.com/saulopz/nekomimi
- * Last update: 2017.09.25
+ * Last update: 2018.04.05
  * ======================================================================
- * Copyright 2017 Saulo Popov Zambiasi
+ * Copyright 2018 Saulo Popov Zambiasi
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

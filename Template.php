@@ -1,11 +1,11 @@
 <?php
 
 /* ======================================================================
- * Nekomimi v2.0
+ * Nekomimi v2.1
  * https://github.com/saulopz/nekomimi
- * Last update: 2017.09.25
+ * Last update: 2018.04.05
  * ======================================================================
- * Copyright 2017 Saulo Popov Zambiasi
+ * Copyright 2018 Saulo Popov Zambiasi
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,11 +20,6 @@
  * limitations under the License.
  */
 
-include_once $_STRINGPATH . "strings_" . $_LANGUAGE . ".php";
-
-/**
- * Class Template
- */
 class Template
 {
     private $name;
@@ -40,7 +35,7 @@ class Template
     {
         $this->name = $name;
         $this->content = $this->make($content);
-        $this->translation();
+        $this->content = MultiLang::translate($this->content);
     }
 
     private function make($content)
@@ -53,43 +48,6 @@ class Template
         return substr($content, $posBegin, $posEnd - $posBegin);
     }
 
-    private function translation()
-    {
-        $find = array();
-        $pos = 0;
-        while ($ini = stripos($this->content, "{str:", $pos)) {
-            $ini += 5;
-            $end = stripos($this->content, "}", $ini);
-            if ($end) {
-                $offset = $end - $ini;
-                array_push($find, substr($this->content, $ini, $offset));
-            }
-            $pos = $end;
-        }
-        foreach ($find as $key => $value) {
-            $tmp = str_ireplace("{str:" . $value . "}",
-                Template::getString($value), $this->content);
-            $this->content = $tmp;
-        }
-    }
-
-    /**
-     * getString
-     * @param $name : Name of string to get from translation files.
-     * @param null $vet : array with name and value of vars to change.
-     * @return mixed
-     */
-    public static function getString($name, $vet = null)
-    {
-        global $_STRING;
-        $out = $_STRING[$name];
-        if (is_array($vet)) {
-            foreach ($vet as $key => $value) {
-                $out = str_ireplace("{" . $key . "}", $value, $out);
-            }
-        }
-        return $out;
-    }
 
     public function setVar($name, $value)
     {

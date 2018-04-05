@@ -20,44 +20,7 @@
  * limitations under the License.
  */
 
-/**
- * Class Request
- */
-class Request
-{
-    private $data;
-
-    public function __construct()
-    {
-        $this->data = array();
-        foreach ($_GET as $name => $value) {
-            $this->data[$name] = $value;
-        }
-        foreach ($_POST as $name => $value) {
-            $this->data[$name] = $value;
-        }
-        foreach ($_FILES as $name => $value) {
-            $this->data[$name] = $value;
-        }
-    }
-
-    public function set($name, $value)
-    {
-        $this->data[$name] = $value;
-    }
-
-    public function get($name)
-    {
-        return $this->data[$name];
-    }
-
-    public function exists($name)
-    {
-        return array_key_exists($name, $this->data);
-    }
-
-    public function __toString()
-    {
-        return json_encode($this);
-    }
-}
+$_NEKO_PATH = "./";
+$_STRING_PATH = $_NEKO_PATH . "strings/";
+$_LANGUAGE = 'enUS';
+$_STRING = array();
