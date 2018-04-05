@@ -37,7 +37,7 @@ place;
 file on STRINGPATH with format strings_yourlang.php, and set
 LANGUAGE as "yourlang". You can also use a language stored on a
 database. 
-- ***$_STRING = array();***: it is the array of strings used to
+- ***$_STRING***: it is the array of strings used to
 change and translate.
 
 ## Observation
